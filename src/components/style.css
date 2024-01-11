@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Neucha&display=swap');
+
+
+.App {
+    text-align: center;
+    font-family: "Neucha", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+.photo-grid , .album-grid, .post-grid, .user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top:15px; 
+  }
+  
+  .photo-item {
+    width: calc(25% - 15px); 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;   
+  }
+
+
+  .user-item {
+    width: calc(50% - 15px); 
+    height: 200px;
+    line-height: 50px;
+    font-size: x-large;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative; 
+    text-align: center; 
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+    background-color: #43597a;
+    outline:3px outset white;
+  }
+
+  .todo-section {
+    height: 90%;
+    width: 60%;
+    border-radius:5px;
+    outline:5px outset white;
+    background-color: #43597a;
+    overflow-y: scroll;
+    text-align: left;
+    grid-template-columns: 20% 80%;
+  }
+
+  .todo {
+    list-style: none;
+    font-size: x-large;
+    margin:10px;
+  }
+
+  .todo-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+  }
+
+  .photo-item:hover img {   
+    transform: scale(95%);
+    outline:5px outset white;
+  }
+
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox-content img{
+    border-radius:5px;
+    outline:5px outset white;
+  }
+
+  .album-item {
+    width: calc(25% - 15px); 
+    height: 100px;
+    line-height: 50px;
+    font-size: x-large;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative; 
+    text-align: center; 
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+  }
+
+  .album-item:hover, .user-item:hover {   
+    transform: scale(95%);
+    outline:5px outset white;
+  }
+
+  .post-item {
+    width: calc(50% - 15px); 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: #43597a; 
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+    outline:3px outset white;
+    text-align: left;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 75% 15%;
+      
+  }
+
+  .edit-post{
+    width: calc(50% - 15px); 
+    height: 70%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: #43597a; 
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+    outline:3px outset white;
+    text-align: left;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
+  .titleEdit{
+    grid-row:1;
+    grid-column: 1;
+    font-size: large;
+
+  }
+  .bodyEdit{
+    grid-row:1;
+    grid-column: 2;
+    margin-left:5px;
+    font-size: large;
+  }
+  .areaTitle{
+    grid-row:2;
+    grid-column: 1; 
+    resize: none;  
+    height: 90%;
+    font-family: "Neucha", cursive;
+    font-size: large;
+    margin-right: 5px;
+  }
+  .areaBody{
+    grid-row:2;
+    grid-column: 2;
+    resize: none;  
+    height: 90%;
+    font-family: "Neucha", cursive;
+    font-size: large;
+    margin-left:5px;
+  }
+
+  .edit-post button{
+    grid-row:3;
+    grid-column: 1 / span 2;
+    font-family: "Neucha", cursive;
+    font-size: large;
+  }
+
+  .delete-post{
+    width: calc(50% - 15px); 
+    height: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: #43597a; 
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+    outline:3px outset white;
+    text-align: center;
+    display:grid;
+  }
+
+  .delete-post p{
+    font-family: "Neucha", cursive;
+    font-size: large;
+  }
+  .delete-post button {
+    font-family: "Neucha", cursive;
+    font-size: large;
+  }
+
+  .addpost-content, .addcomment-content {
+    display: grid;
+    padding: 15px;
+    background-color: #43597a;
+    border-radius: 5px;
+    outline:3px outset white;
+    width: 60%;
+    height: 70%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
+  .addpost-content input {
+    margin-bottom: 5px;
+    font-family: "Neucha", cursive;
+    font-size: x-large;
+
+    grid-row:1;
+  }
+  .addpost-content textarea, .addcomment-content textarea{
+    margin-bottom: 5px;
+    font-family: "Neucha", cursive;
+    font-size: x-large;
+    resize:none;
+    width: auto;
+    grid-row:2;
+
+  }
+
+  .addpost-content button, .addcomment-content button{
+    font-family: "Neucha", cursive;
+    font-size: large;
+    grid-row:3;
+  }
+
+  .author{
+    color:rgb(219, 219, 219);
+    font-weight: 600;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .post-item h3 {
+    font-size: x-large;  
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .post {
+    font-size: large;
+    grid-row:2 / 3;
+    grid-column:2;
+    padding: 5px 15px 15px 15px;
+  }
+
+  .showCommentsBtn {
+    font-family: "Neucha", cursive;
+    grid-row:3;
+    grid-column: 1;
+    font-size: large;
+    margin-right: 5px;
+  }
+
+  .addCommentBtn {
+    font-family: "Neucha", cursive;
+    grid-row:3;
+    grid-column: 2;
+    font-size: large;
+    margin-left: 5px;
+  }
+
+  .addBtn{
+    font-family: "Neucha", cursive;
+    cursor: pointer;
+    font-size: large;
+  }
+
+  .editBtn
+  {
+    width: 100%;
+    height: 130%;
+    
+    margin-top: 10px;
+    background-color: rgb(91, 238, 110);
+    font-family: "Neucha", cursive;
+    cursor: pointer;
+    font-size: large;
+  }
+
+  .deleteBtn
+  {
+    width: 100%;
+    height: 130%;
+    justify-self: end;
+    margin-top: 10px;
+    background-color: rgb(238, 91, 91);
+    font-family: "Neucha", cursive;
+    cursor: pointer;
+    font-size: large;
+  }
+
+  .userActions
+  {
+    justify-self: end;
+    display: flex;
+    width: fit-content;
+  }
+
+  .post-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .post-lightbox-content {
+    height: 90%;
+    width: 60%;
+    border-radius:5px;
+    outline:5px outset white;
+    background-color: #43597a;
+    overflow-y: scroll;
+    text-align: left;
+  }
+
+  .comment{
+    list-style:none;
+    overflow-wrap: normal;
+    background-image: linear-gradient(to right, rgb(197, 226, 226) , #e4e4e4);
+    margin: 30px 0px 30px 0px;
+    color:#070707;
+    border-radius: 5px;
+    outline:5px outset white;
+    padding: 1px 5px 1px 5px;
+    display:grid;
+    grid-template-rows: 10% 20% 70%;
+    width:95%;
+  }
+
+  .post-grid button {
+    cursor: pointer;
+  }
+  
+  .pagination {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .pagination p {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+
+  .pagination button {
+    margin-right: 4px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 20px;
+  }
+
+  .header {
+    width:96%;
+    height: 50px;
+    margin: 15px 10px 5px 10px;
+    padding: 10px;
+    background-color: #d3d3d3;
+    outline:5px outset white;
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: 12% 12% 12% 12% 8% 20% 12% 12%;
+    justify-items: center;
+  }
+
+  .header button{
+    padding: 8px 16px;
+    cursor: pointer;
+    width:95%;
+    border-radius: 5px;
+    font-family: "Neucha", cursive;
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .loginButton {
+    background-color: rgb(80, 209, 101);
+  }
+
+  .header input {
+    width: 100%;
+    font-size: x-large;
+    font-family: "Neucha", cursive;
+    margin-right:10px;
+    border-radius: 5px;
+  }
+
+  .username{
+    font-size: x-large;
+    color: #070707;
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .settings{
+    width: 30%;
+    font-size: x-large;
+  }
+
+  .settings input {
+    width: 100%;
+    font-size: x-large;
+    font-family: "Neucha", cursive;
+    margin-right:10px;
+    border-radius: 5px;
+  }
+
+  .settings button {
+    padding: 8px 16px;
+    margin-top:15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Neucha", cursive;
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .settings-email{
+    margin-top:50px;
+    font-size: x-large;
+  }
+
+  .repeat {
+    margin-top:10px;
+  }
+
+ 
