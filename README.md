@@ -3,41 +3,47 @@ Dawid Tyburski - Aplikacja jsonplaceholder.typicode.com
 ```
 
 ## Funkcje niezalogowanego użytkownika
-<br />
+
 #### > Wyświetlanie postów
-![posty_niezal](https://github.com/tyburski/react_wsei/assets/129940051/d0d52038-6bb6-4a97-b9d5-a2503ea5d435)<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/f37a36f5-5425-4f2d-a897-7f94427aed60"/>
+
 #### > Wyświetlanie komentarzy
-![komentarze](https://github.com/tyburski/react_wsei/assets/129940051/99848253-27f3-4474-ab5d-1ee4bfe32914)<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/d112ee5c-ba7c-4baa-ab9a-5ea34bc340e0"/>
+
 #### > Wyświetlanie oraz wybór albumu
-![albumy](https://github.com/tyburski/react_wsei/assets/129940051/15a88a36-1388-4213-861e-47bf38871493)<br />
-![zdjecia_z_albumu](https://github.com/tyburski/react_wsei/assets/129940051/82430f0d-8f03-4a01-9f57-c290159ca976)<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/95809b98-7404-4019-a24b-3e37849eddae"/>
+
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/9eb63097-9bd9-48f5-8ca4-05833c6194ff"/>
+
 #### > Wyświetlanie wszystkich zdjęć
-![zdjecia](https://github.com/tyburski/react_wsei/assets/129940051/b224fdc7-0b6e-4946-8043-d798b74a37e7)<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/b443d631-a4d1-4c03-a103-2450d58257d0"/>
+
 #### > Wyświetlanie użytkowników oraz listy zadań
-![uzytkownicy](https://github.com/tyburski/react_wsei/assets/129940051/87a281af-8f29-4466-bcd6-585f47ea3594)<br />
-![todos](https://github.com/tyburski/react_wsei/assets/129940051/669e7f6e-c439-4758-8223-2437984d3abd)<br />
-<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/ca72899d-c8e9-420b-b1a9-4daad0416697"/>
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/42afc9cd-3fd1-4ce1-93e9-6fad2102f3ed"/>
+
+
 
 ## Funkcje zalogowanego użytkownika
-<br />
+
 #### > Zmiana adresu e-mail użytkownika
-![ustawienia](https://github.com/tyburski/react_wsei/assets/129940051/f3158cfe-87cf-4538-9aa4-e534f1cce76b)<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/5b170fdf-6571-426b-b203-206ac57487e1"/>
+
+#### > Funkcje dodatkowe
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/e937175e-1567-4069-a9c1-e3486dbe8ae6"/>
+
+#### > Dodawanie postów
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/2e1e9c4a-9de5-4846-994a-9a467f3947b6"/>
+
 #### > Dodawanie komentarzy
-<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/a41991b8-1903-413f-b135-8b89fed117c8"/>
+
 #### > Edytowanie swoich postów
-<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/6843d465-4371-4262-a1dc-00285013d956"/>
+
 #### > Usuwanie swoich postów
-<br />
-<br />
-<br />
+<img src="https://github.com/tyburski/react_wsei/assets/129940051/64402dea-b175-4a0d-922b-f91c8c15fafb"/>
+
 
 
 
